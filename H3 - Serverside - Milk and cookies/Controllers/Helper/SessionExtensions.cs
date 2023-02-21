@@ -13,6 +13,6 @@ namespace H3___Serverside___Milk_and_cookies.Controllers.Helper
             var value = session.GetString(key); 
             
             return value == null ? default : JsonConvert.DeserializeObject<T>(value);
-        }
+        } 
     }
 }
